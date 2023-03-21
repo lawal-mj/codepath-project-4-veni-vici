@@ -28,6 +28,7 @@ export default function App() {
         <button className="bg-blue-200 font-bold p-2 rounded-md" onClick={() => update_ban_list(height)}><p>Height: {height}</p></button>
         <button className="bg-blue-200 font-bold p-2 rounded-md" onClick={() => update_ban_list(lifespan)}><p>Lifespan: {lifespan}</p></button>
       </div>
+      <br />
       <div className='flex justify-center'>
 
       <img className='w-100 h-60' src={url} alt="" />
@@ -82,7 +83,7 @@ export default function App() {
       <h1 className='text-xl font-bold'>Daily dose of Dogs</h1>
       <div className='flex h-screen'>
 
-        <div className='flex-1 bg-gray-100'>
+        <div className='flex-1 bg-gray-100 pr-2'>
           <div className='flex flex-col gap-1  pb-2'>
             <h1 className='text-lg font-bold'>Previously Seen Items</h1>
             {oldItems.map((item, index) => (
@@ -101,7 +102,7 @@ export default function App() {
           <button onClick={getNewData} className="bg-yellow-200 p-2 rounded-md">Next Dog</button>
         </div>
 
-        <div className='flex-1 bg-gray-100'>
+        <div className='flex-1 bg-gray-100 pl-2'>
           <div className='flex flex-col gap-1  pb-2'>
             <h1 className='text-lg font-bold'>Banned Items</h1>
             {bannedItems.map((item, index) => (
